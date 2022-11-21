@@ -24,7 +24,7 @@
     padding: 1.375rem 0.5rem 0.5rem;
     height: 3.25rem;
     width: 100%;
-    background-color: #808080;
+    color-scheme: dark;
 }
 
 .input::placeholder {
@@ -114,6 +114,8 @@
     transition: all 0.25s;
 }
 
+
+/*invalid input*/
 .textarea-container--invalido {
     margin-bottom: 0.5rem;
 }
