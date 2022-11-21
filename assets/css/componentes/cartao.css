@@ -1,5 +1,5 @@
 .cartao {
-    background-color: var(--cor-contraste-claro);
+    background-color: var(--cor-contraste-escuro);
     border-radius: 10px;
     box-shadow: var(--sombra);
     width: 100%;

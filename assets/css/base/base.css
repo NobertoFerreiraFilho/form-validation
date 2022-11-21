@@ -2,8 +2,8 @@
 @import url(_variaveis.css);
 
 body {
-	background-color: var(--cor-secundaria);
-	color: var(--cor-contraste-escuro);
+	background-color: var(--back-escuro);
+	color: var(--cor-contraste-claro);
 	font-family: var(--fonte-familia-corpo);
 	overflow-x: hidden;
 }

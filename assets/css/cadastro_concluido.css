@@ -7,7 +7,7 @@
 }
 
 .cadastro-cabecalho__logo {
-    width: 2.625rem;
+    width: 4rem;
     margin-bottom: 0.5rem;
 }
 
@@ -43,8 +43,9 @@
 
 @media(min-width: 800px) {
     .cadastro-cabecalho__logo {
-        width: 5.75rem;
+        width: 8.75rem;
         margin-bottom: 1rem;
+        border: 1px solid red;
     }
 
     .cadastro-cabecalho__titulo {
