@@ -1,6 +1,6 @@
 
 .cabecalho {
-    background-color: var(--cor-contraste-claro);
+    background-color: var(--back-escuro);
     border-radius: 0 0 10px 10px;
     box-shadow: var(--sombra);
     display: flex;
@@ -11,7 +11,7 @@
 }
 
 .cabecalho__logo {
-    width: 3rem;
+    width: 7rem;
 }
 
 .cabecalho__lista-navegacao {
@@ -19,5 +19,17 @@
 }
 
 .cabecalho__link {
-    margin-left: 2rem;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+
+
+@media screen and (min-width:768px) {
+    .cabecalho__logo {
+        width: 10rem;
+    }
+
+    .cabecalho__link {
+        margin-left: 2rem;
+    }
 }
