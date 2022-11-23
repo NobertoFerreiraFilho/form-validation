@@ -33,6 +33,7 @@ Project developed as part of the Alura course "JavaScript na Web: validação de
 #### Validation Strategy:
 
 ##### Preparation
+
 <ol>
 <li>Hidden "span" tag after each "input" tag that will have its value changed according to the specific error or will be hidden when its all good. all of this using JS DOM manipulation.</li>
 <li>Implement "data-tipo= nome/email/cpf/cep/... " attribute and "required" on each input</li>
@@ -44,6 +45,7 @@ Project developed as part of the Alura course "JavaScript na Web: validação de
 </ol>
 
 ##### Individual Validation Strategy (Client Register Form):
+
 <ol>
     <li>
         <h6>Name:</h6>
@@ -154,9 +156,14 @@ Project developed as part of the Alura course "JavaScript na Web: validação de
 ## Lessons Learned
 
 <ul>
+  <li>HTML validation with required and type attribute</li>
+  <li>HTML validation with pattern attribute + REGEX</li>
+  <li>Create function to perform customized validation</li>
+  <li>Create customized erro messages</li>
+  <li>Using DATA attribute to work with HTML <-> JS</li>
   <li>DOM Manipulation with JS</li>
-  <li>Diferents input validation: name, email, password, birthdate, CPF, CEP, complete address and price</li>
-  <li>Creating reusable functions</li>
+  <li>Different inputs validation: name, email, password, birthdate, CPF, CEP, complete address and price</li>
+  <li>Creating reusable/recursive functions</li>
   <li>Restfull API </li>
 </ul>
  
