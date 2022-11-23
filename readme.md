@@ -17,21 +17,22 @@ Project developed as part of the Alura course "JavaScript na Web: validação de
 
 <!-- ![gif of the project]() -->
 
-## Detalhes do projeto
+## Project Details
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-<p>"Devs Registers Form" Page</p>
+<h3>"Devs Registers Form" Page</h3>
 <img align='center' src='https://github.com/NobertoFerreiraFilho/form-validation/blob/main/img/project/cadastro-dark.png#vitrinedev' width=400/>
 <img align='center' src='https://github.com/NobertoFerreiraFilho/form-validation/blob/main/img/project/cadastro-erros-dark.png' width=400/>
-<p>"Cadastro Concluído" Page</p>
+<h3>"Cadastro Concluído" Page</h3>
 <img align='center' src='https://github.com/NobertoFerreiraFilho/form-validation/blob/main/img/project/cadastro-concluido-dark.png' width=400/>
-<p>"Product Register" Page</p>
+<h3>"Product Register" Page</h3>
 <img align='center' src='https://github.com/NobertoFerreiraFilho/form-validation/blob/main/img/project/cadastro-produto-erro-dark.png' width=400/>
 
 ### Detalhes do projeto
 
-<h3>Validation Strategy:</h3>
-<h4>Preparation</h4>
+#### Validation Strategy:
+
+##### Preparation
 <ol>
 <li>Hidden "span" tag after each "input" tag that will have its value changed according to the specific error or will be hidden when its all good. all of this using JS DOM manipulation.</li>
 <li>Implement "data-tipo= nome/email/cpf/cep/... " attribute and "required" on each input</li>
@@ -42,23 +43,23 @@ Project developed as part of the Alura course "JavaScript na Web: validação de
 <li>Inside the forEach also included a call for <strong>"Valida()"</strong> function with e.target parameter</li>
 </ol>
 
-<h4>Individual Validation Strategy (Client Register Form):</h4>
+##### Individual Validation Strategy (Client Register Form):
 <ol>
     <li>
-        <h5>Name:</h5>
+        <h6>Name:</h6>
         <ul>
         <li>valueMissing: "valida()" Check "input.validity.valid" status: "true" for filled or "false" for empty by the time the input field loses focus (blur). If empty (false), it changes text content using innerHTML with a standard message for "valueMissing" type of error. </li>
         </ul>
     </li>
     <li>
-        <h5>E-mail:</h5>
+        <h6>E-mail:</h6>
         <ul>
         <li>valueMissing: same as valueMissing name's error.</li>
         <li>typeMismatch: define "Type='email'" standard HTML validation.</li>
         </ul>
     </li>
     <li>
-        <h5>Password:</h5>
+        <h6>Password:</h6>
         <ul>
         <li>valueMissing: same as valueMissing name's error.</li>
         <li>patternMismatch: used a HTML attribute with a REGEX to validate the password with this rules:
@@ -74,7 +75,7 @@ Project developed as part of the Alura course "JavaScript na Web: validação de
         </ul>
     </li>
     <li>
-        <h5>Birth Date:</h5>
+        <h6>Birth Date:</h6>
         <ul>
         <li>valueMissing: same as valueMissing name's error.</li>
         <li>customError: check if is older then 18yr old.
@@ -91,7 +92,7 @@ Project developed as part of the Alura course "JavaScript na Web: validação de
         </ul>
     </li>
     <li>
-        <h5>CPF:</h5>
+        <h6>CPF:</h6>
         <ul>
         <li>valueMissing: same as valueMissing name's error.</li>
         <li>customError: check if the input follows CPF rules.
@@ -107,7 +108,7 @@ Project developed as part of the Alura course "JavaScript na Web: validação de
         </ul>
     </li>
     <li>
-        <h5>CEP:</h5>
+        <h6>CEP:</h6>
         <ul>
         <li>valueMissing: same as valueMissing name's error.</li>
         <li>patternMismatch: used a HTML attribute with a REGEX to validate the CEP with this rules:
@@ -132,17 +133,17 @@ Project developed as part of the Alura course "JavaScript na Web: validação de
     </li>
 </ol>
 
-<h4>Individual Validation Strategy (Product Register Form):</h4>
+##### Individual Validation Strategy (Product Register Form):
 
 <ol>
     <li>
-        <h5>Name:</h5>
+        <h6>Name:</h6>
         <ul>
         <li>valueMissing: exactly the same strategy of the Client form. </li>
         </ul>
     </li>
     <li>
-        <h5>Price:</h5>
+        <h6>Price:</h6>
         <ul>
         <li>valueMissing: exactly the same strategy of the Client form. </li>
         <li>It was also implemented a MASK imported from this link: <a href='https://github.com/codermarcos/simple-mask-money'>https://github.com/codermarcos/simple-mask-money</a>. This Mask works as a validation because it prevents wrong inputs like letter or symbols.</li>
