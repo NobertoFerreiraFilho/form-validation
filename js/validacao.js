@@ -1,6 +1,6 @@
 export function valida(input) {
   const tipoDeInput = input.dataset.tipo;
-
+  console.log(input.validity)
   if (validadores[tipoDeInput]) {
     validadores[tipoDeInput](input);
   }
@@ -16,11 +16,6 @@ export function valida(input) {
 };
 
 
-
-
-
-
-
 /* Arry com os tipos de erros utilizados que será utilizado para verificar qual deles está "true" no atributo "validity" */
 const tiposDeErro = [
   'valueMissing',
@@ -28,14 +23,6 @@ const tiposDeErro = [
   'patternMismatch',
   'customError'
 ]
-
-
-
-
-
-
-
-
 
 const mensagensDeErro = {
   nome: {
